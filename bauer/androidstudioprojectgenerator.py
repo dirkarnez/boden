@@ -61,7 +61,7 @@ class AndroidStudioProjectGenerator(object):
         try:
             gradle_path = self.gradle.getGradlePath()
 
-            subprocess.check_call( '"%s" wrapper --gradle-version=5.3.1' % (gradle_path),
+            subprocess.check_call( '%s wrapper --gradle-version=5.3.1' % (gradle_path),
                                    shell=True,
                                    cwd=gradle_temp_dir);
 
